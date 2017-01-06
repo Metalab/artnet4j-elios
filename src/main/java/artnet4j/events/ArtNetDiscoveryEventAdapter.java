@@ -25,22 +25,18 @@ import artnet4j.ArtNetNode;
 
 public class ArtNetDiscoveryEventAdapter implements ArtNetDiscoveryListener {
 
-    @Override
     public void discoveredNewNode(ArtNetNode node) {
 
     }
 
-    @Override
     public void discoveredNodeDisconnected(ArtNetNode node) {
 
     }
 
-    @Override
     public void discoveryCompleted(List<ArtNetNode> nodes) {
 
     }
 
-    @Override
     public void discoveryFailed(Throwable t) {
 
     }

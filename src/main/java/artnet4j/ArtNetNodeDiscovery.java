@@ -81,7 +81,6 @@ public class ArtNetNodeDiscovery implements Runnable {
 		}
 	}
 
-	@Override
 	public void run() {
 		try {
 			while (isActive) {

@@ -43,27 +43,22 @@ import artnet4j.packets.ArtNetPacket;
 
 public class ArtNetServerEventAdapter implements ArtNetServerListener {
 
-    @Override
     public void artNetPacketBroadcasted(ArtNetPacket packet) {
 
     }
 
-    @Override
     public void artNetPacketReceived(ArtNetPacket packet) {
 
     }
 
-    @Override
     public void artNetPacketUnicasted(ArtNetPacket packet) {
 
     }
 
-    @Override
     public void artNetServerStarted(ArtNetServer server) {
 
     }
 
-    @Override
     public void artNetServerStopped(ArtNetServer server) {
 
     }

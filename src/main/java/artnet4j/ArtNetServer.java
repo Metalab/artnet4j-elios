@@ -90,7 +90,6 @@ public class ArtNetServer extends ArtNetNode implements Runnable {
 		}
 	}
 
-	@Override
 	public void run() {
 		byte[] receiveBuffer = new byte[receiveBufferSize];
 		DatagramPacket receivedPacket = new DatagramPacket(receiveBuffer,

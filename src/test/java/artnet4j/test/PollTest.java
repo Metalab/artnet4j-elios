@@ -38,7 +38,6 @@ public class PollTest implements ArtNetDiscoveryListener {
 
     private int sequenceID;
 
-    @Override
     public void discoveredNewNode(ArtNetNode node) {
         if (netLynx == null) {
             netLynx = node;
@@ -46,7 +45,6 @@ public class PollTest implements ArtNetDiscoveryListener {
         }
     }
 
-    @Override
     public void discoveredNodeDisconnected(ArtNetNode node) {
         System.out.println("node disconnected: " + node);
         if (node == netLynx) {
@@ -54,7 +52,6 @@ public class PollTest implements ArtNetDiscoveryListener {
         }
     }
 
-    @Override
     public void discoveryCompleted(List<ArtNetNode> nodes) {
         System.out.println(nodes.size() + " nodes found:");
         for (ArtNetNode n : nodes) {
@@ -62,7 +59,6 @@ public class PollTest implements ArtNetDiscoveryListener {
         }
     }
 
-    @Override
     public void discoveryFailed(Throwable t) {
         System.out.println("discovery failed");
     }

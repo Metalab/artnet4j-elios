@@ -4,7 +4,7 @@
 	<groupId>net.eliosoft</groupId>
 	<artifactId>artnet4j</artifactId>
 	<name>ArtNet4j</name>
-	<version>0001</version>
+	<version>0002</version>
 	<description>Java implementation of the Art-Net protocol</description>
 	<packaging>jar</packaging>
 	<inceptionYear>2009</inceptionYear>

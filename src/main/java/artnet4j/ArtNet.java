@@ -47,6 +47,11 @@ public class ArtNet {
         logger.info("Art-Net v" + VERSION);
     }
 
+    public ArtNet(ArtNetServer server) {
+        logger.info("Art-Net v" + VERSION);
+    	this.server = server;
+    }
+    
     public void addServerListener(ArtNetServerListener l) {
         server.addListener(l);
     }
@@ -63,7 +68,9 @@ public class ArtNet {
     }
 
     public void init() {
-        server = new ArtNetServer();
+    	if(server == null) {
+            server = new ArtNetServer();
+    	}
         server.addListener(new ArtNetServerEventAdapter() {
 
             @Override
